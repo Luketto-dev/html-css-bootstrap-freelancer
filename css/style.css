@@ -1,0 +1,32 @@
+/* $grid-breakpoints: ( 
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);*/
+
+html{
+    font-size: 16px;
+}
+
+.main-menu{
+    list-style: none;
+    /* debug */
+    border: 1px dashed black;
+}
+
+.section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* debug */
+    background-color: green;
+    min-height: 100px;
+}
+
+.portfolio-card{
+    /* debug */
+    min-height: 100px;
+    border: 1px solid red;
+}
