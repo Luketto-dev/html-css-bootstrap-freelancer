@@ -14,16 +14,16 @@
 </head>
 <body>
     <header class="sticky-top">
-        <nav class="py-3">
+        <nav class="py-3 bg-dark">
                 <!-- contenitore in flex per inserire elementi della nav -->
             <div class="container d-flex justify-content-between align-items-center">
-                <div class="text-white">
-                    <h3>START BOOTSTRAP</h3>
+                <div class="text-white fs-3 fw-bold">
+                    START BOOTSTRAP
                 </div>
                 <ul class="main-menu d-none d-md-flex">
-                    <li><a class="text-white" href="">PORTFOLIO</a></li>
-                    <li><a class="text-white" href="">ABOUT</a></li>
-                    <li><a class="text-white" href="">CONTACT</a></li>
+                    <li><a class="text-white" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a class="text-white" href="#about">ABOUT</a></li>
+                    <li><a class="text-white" href="#contactMe">CONTACT</a></li>
                 </ul>
                 <div class="hamburger-menu d-md-none">
                     <div></div>
@@ -35,17 +35,22 @@
     </header>
 
     <main>
-        <div class="section section-jumbo text-center text-white">
+        <!-- start bootstrap -->
+        <div class="section section-jumbo text-center text-white bg-primary">
             <div class="container">
                 <div class="jumbo-content">
                     <div class="jumbo-avatar">
                         <img src="img/avatar.svg" alt="avatar">
                     </div>
                     <h1 class="display-5 fw-bold">START BOOTSTRAP</h1>
-                    <div class="star d-flex justify-content-center align-items-center py-3">
-                        <div class="line"></div>
-                        <i class="fa-solid fa-star"></i>
-                        <div class="line"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-center align-items-center py-3">
+                                <div class="border-bottom flex-grow-1 border-3 border-white"></div>
+                                <i class="fa-solid fa-star mx-3"></i>
+                                <div class="border-bottom flex-grow-1 border-3 border-white"></div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <h5>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h5>
@@ -54,14 +59,18 @@
             </div>
         </div>
 
-        <div class="section section-portfolio bg-light">
+        <div class="section bg-light" id="portfolio">
             <div class="container">
                 <h2 class="text-center fs-1 fw-bold">PORTFOLIO</h2>
-                <div class="star d-flex justify-content-center align-items-center py-3">
-                    <div class="line bg-dark"></div>
-                    <i class="fa-solid fa-star"></i>
-                    <div class="line bg-dark"></div>
-                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-center align-items-center py-3">
+                                <div class="border-bottom flex-grow-1 border-3 border-dark"></div>
+                                <i class="fa-solid fa-star mx-3"></i>
+                                <div class="border-bottom flex-grow-1 border-3 border-dark"></div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                     <div class="col">
                         <div class="portfolio-card">
@@ -97,14 +106,18 @@
             </div>
         </div>
 
-        <div class="section text-white section-about">
+        <div class="section text-white section-about bg-primary" id="about">
             <div class="container">
                 <h2 class="text-center fs-1 fw-bold">ABOUT</h2>
-                <div class="star d-flex justify-content-center align-items-center py-3">
-                    <div class="line"></div>
-                    <i class="fa-solid fa-star"></i>
-                    <div class="line"></div>
-                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-center align-items-center py-3">
+                                <div class="border-bottom flex-grow-1 border-3 border-white"></div>
+                                <i class="fa-solid fa-star mx-3"></i>
+                                <div class="border-bottom flex-grow-1 border-3 border-white"></div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="row justify-content-center">
                     <div class="col-11 col-sm-5">
                         <p class="fs-5">Freelancer in a free bootstrap theme created by Start Bootstrap. 
@@ -128,22 +141,46 @@
             </div>
         </div>
 
-        <div class="section section-contact-me bg-light">
+        <div class="section section-contact-me bg-light" id="contactMe">
             <div class="container">
                 <h2 class="text-center fw-bold fs-1">CONTACT ME</h2>
-                <div class="star d-flex justify-content-center align-items-center py-3">
-                    <div class="line bg-dark"></div>
-                    <i class="fa-solid fa-star"></i>
-                    <div class="line bg-dark"></div>
-                </div>
-                <form action="">
-
-                </form>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-5 col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-center align-items-center py-3">
+                                <div class="border-bottom flex-grow-1 border-3 border-dark"></div>
+                                <i class="fa-solid fa-star mx-3"></i>
+                                <div class="border-bottom flex-grow-1 border-3 border-dark"></div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">  
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Luca">
+                                <label for="FloatingName">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingInputNumber" placeholder="Phone Number">
+                                <label for="floatingInputNumber">Phone Number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control h-25" id="FloatingTextArea" rows="10" placeholder="Message"></textarea>
+                                <label for="FloatingTextArea">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">invia</button>
+                        </form>
+                    </div> 
+                </div> 
             </div>
         </div>
     </main>
 
-        <footer class="text-white py-5">
+        <footer class="text-white py-5 bg-secondary">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-3 text-center">
                     <div class="col">
@@ -174,7 +211,7 @@
                 </div>              
             </div>
         </footer>
-        <div class="bg-dark-blue">
+        <div class="bg-dark">
             <div class="container">
                 <div class="pt-4 pb-5 text-center text-white">
                     Copyright © Your Website 2019
